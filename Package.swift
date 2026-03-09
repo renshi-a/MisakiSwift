@@ -28,14 +28,14 @@ let package = Package(
         .product(name: "MLXUtilsLibrary", package: "MLXUtilsLibrary")
      ],
      resources: [
-      .copy("Resources/gb_bart.safetensors"),
-      .copy("Resources/gb_bart_config.json"),
-      .copy("Resources/gb_gold.json"),
-      .copy("Resources/gb_silver.json"),
-      .copy("Resources/us_bart.safetensors"),
-      .copy("Resources/us_bart_config.json"),
-      .copy("Resources/us_gold.json"),
-      .copy("Resources/us_silver.json")
+      .process("Resources/gb_bart.safetensors"),
+      .process("Resources/gb_bart_config.json"),
+      .process("Resources/gb_gold.json"),
+      .process("Resources/gb_silver.json"),
+      .process("Resources/us_bart.safetensors"),
+      .process("Resources/us_bart_config.json"),
+      .process("Resources/us_gold.json"),
+      .process("Resources/us_silver.json")
      ]
     ),
     .testTarget(
